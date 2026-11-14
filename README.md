@@ -6,7 +6,6 @@ Software engineer working on distributed systems and infrastructure. [vishalkota
 | [inference-serving](https://github.com/vishalkotak/inference-serving) | Reimplementation of vLLM's paged KV cache and PagedAttention, with serving benchmarks. |
 | [downstream-detector](https://github.com/vishalkotak/infrastructure/tree/main/downstream-detector) | Runs downstream consumers' test suites against a library PR to catch compatibility breaks. |
 | [model-store](https://github.com/vishalkotak/infrastructure/tree/main/model-store) | Model registry and Kubernetes operator for stable and canary rollouts. |
-| [triage-agent](https://github.com/vishalkotak/triage-agent) | Incident triage agent with a schema-validated tool registry. |
 | [healthkit-sync](https://github.com/vishalkotak/healthkit-sync) | iOS app that syncs Apple Health data to Postgres, with a local dashboard. |
 
 **Write-ups**
