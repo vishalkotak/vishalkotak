@@ -1,14 +1,15 @@
-I build the plumbing that keeps GPUs fed: data paths, KV-cache tiers, and the control planes around them. [vishalkotak.github.io](https://vishalkotak.github.io)
+Software engineer working on distributed systems and infrastructure. [vishalkotak.github.io](https://vishalkotak.github.io)
 
-| Project | |
+| Project | Description |
 |---|---|
-| [nvme-kv-cache](https://github.com/vishalkotak/nvme-kv-cache) | Rust DRAM/NVMe page cache. When does spilling to disk beat recompute? |
-| [inference-serving](https://github.com/vishalkotak/inference-serving) | vLLM internals from scratch, CUDA execution experiments, serving benchmarks. |
-| [downstream-detector](https://github.com/vishalkotak/infrastructure/tree/main/downstream-detector) | Point it at a PR. It runs your consumers' tests and shows what broke. |
-| [model-store](https://github.com/vishalkotak/infrastructure/tree/main/model-store) | Model registry plus a k8s operator for stable/canary model rollouts. |
-| [healthkit-sync](https://github.com/vishalkotak/healthkit-sync) | iPhone app syncing all 189 HealthKit types to my own Postgres. |
-| [triage-agent](https://github.com/vishalkotak/triage-agent) | Incident-triage LLM agent with a schema-validated tool registry. |
+| [nvme-kv-cache](https://github.com/vishalkotak/nvme-kv-cache) | Tiered DRAM/NVMe page cache in Rust with io_uring and blocking I/O backends. |
+| [inference-serving](https://github.com/vishalkotak/inference-serving) | Reimplementation of vLLM's paged KV cache and PagedAttention, with serving benchmarks. |
+| [downstream-detector](https://github.com/vishalkotak/infrastructure/tree/main/downstream-detector) | Runs downstream consumers' test suites against a library PR to catch compatibility breaks. |
+| [model-store](https://github.com/vishalkotak/infrastructure/tree/main/model-store) | Model registry and Kubernetes operator for stable and canary rollouts. |
+| [triage-agent](https://github.com/vishalkotak/triage-agent) | Incident triage agent with a schema-validated tool registry. |
+| [healthkit-sync](https://github.com/vishalkotak/healthkit-sync) | iOS app that syncs Apple Health data to Postgres, with a local dashboard. |
 
-Notes
-- [Disaggregated prefill/decode on 2× T4](https://github.com/vishalkotak/inference-serving/blob/main/results/d2-disagg-prefill-decode.md): every misconfiguration returned a correct-looking answer.
-- [Finding the batching knee](https://github.com/vishalkotak/inference-serving/blob/main/results/d1-load-test.md): past 4 concurrent requests, +8% throughput for 2× latency.
+**Write-ups**
+- [Cache benchmarks](https://github.com/vishalkotak/nvme-kv-cache/blob/main/BENCHMARKS.md): io_uring vs blocking I/O, LRU eviction cost
+- [Disaggregated prefill/decode on 2× T4](https://github.com/vishalkotak/inference-serving/blob/main/results/d2-disagg-prefill-decode.md): why the KV handoff failed silently
+- [Concurrency load test](https://github.com/vishalkotak/inference-serving/blob/main/results/d1-load-test.md): where batching stops paying off
