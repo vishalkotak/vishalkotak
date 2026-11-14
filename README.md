@@ -3,10 +3,9 @@ I build the plumbing that keeps GPUs fed: data paths, KV-cache tiers, and the co
 | Project | |
 |---|---|
 | [nvme-kv-cache](https://github.com/vishalkotak/labs/tree/main/storage/nvme-kv-cache) | Rust DRAM/NVMe page cache. When does spilling to disk beat recompute? |
-| [inference-serving](https://github.com/vishalkotak/inference-serving) | vLLM's paged KV and prefix cache rebuilt from scratch, plus serving benchmarks. |
+| [inference-serving](https://github.com/vishalkotak/inference-serving) | vLLM internals from scratch, CUDA execution experiments, serving benchmarks. |
 | [downstream-detector](https://github.com/vishalkotak/infrastructure/tree/main/downstream-detector) | Point it at a PR. It runs your consumers' tests and shows what broke. |
 | [model-store](https://github.com/vishalkotak/infrastructure/tree/main/model-store) | Model registry and deploy control plane on Temporal, Postgres, MinIO, k8s. |
-| [gpu-inference-systems](https://github.com/vishalkotak/gpu-inference-systems) | GPU execution experiments on remote NVIDIA hardware. |
 | [my-personal-dashboard](https://github.com/vishalkotak/my-personal-dashboard) | iPhone app syncing all 189 HealthKit types to my own Postgres. |
 
 Notes
