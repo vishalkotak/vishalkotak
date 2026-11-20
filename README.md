@@ -4,4 +4,4 @@ Software engineer working on distributed systems and infrastructure. [vishalkota
 - **[inference-serving](https://github.com/vishalkotak/inference-serving)**: vLLM and SGLang serving internals rebuilt and compared. Jump-forward decoding cuts a JSON object from 33 forward passes to 4. [Disaggregated prefill/decode](https://github.com/vishalkotak/inference-serving/blob/main/results/d2-disagg-prefill-decode.md)
 - **[healthkit-sync](https://github.com/vishalkotak/healthkit-sync)**: Qwen3.5-0.8B fine-tuned with LoRA on a Mac as a private health coach. Quality-check pass rate went from 46% to 93%. [Write-up](https://github.com/vishalkotak/healthkit-sync/blob/main/health-llm/docs/WRITEUP.md)
 
-I contribute upstream to tools I've used in past roles (Delta, Vortex, Kubernetes) or that touch my own projects (RL, inference). Robotics and drones are a personal interest in physical AI.
+I contribute upstream to tools I've used in past roles (Delta, Vortex, Kubernetes, PyTorch, Ray) or that touch my own projects (RL, inference). Robotics and drones are a personal interest in physical AI.
