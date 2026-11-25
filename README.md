@@ -5,7 +5,7 @@ Software engineer working on distributed systems and infrastructure. [vishalkota
 - **[inference-serving](https://github.com/vishalkotak/inference-serving)**: vLLM and SGLang serving internals rebuilt and compared. Jump-forward decoding cuts a JSON object from 33 forward passes to 4. [Disaggregated prefill/decode](https://github.com/vishalkotak/inference-serving/blob/main/results/d2-disagg-prefill-decode.md)
 - **[healthkit-sync](https://github.com/vishalkotak/healthkit-sync)**: Qwen3.5-0.8B fine-tuned with LoRA on a Mac as a private health coach. Quality-check pass rate went from 46% to 93%. [Write-up](https://github.com/vishalkotak/healthkit-sync/blob/main/health-llm/docs/WRITEUP.md)
 
-**Where I contribute upstream**
-- Data and ML infrastructure I've used in past roles: Delta, Vortex, Kubernetes, PyTorch, Ray
-- RL and inference, alongside my own projects
-- Robotics and drones, out of interest in physical AI
+**Open source**
+- Data infra I used in past roles: [deterministic simulation testing](https://github.com/delta-io/delta-rs/pull/5067) for concurrent commits in delta-rs, [GPU decoding of ALP-RD floats](https://github.com/vortex-data/vortex/pull/11707) in Vortex
+- RL, alongside my own projects: [safety-gymnasium cost fixes](https://github.com/pytorch/rl/pull/4744) in TorchRL
+- Robotics and drones, out of interest in physical AI: [GJK contact fix](https://github.com/google-deepmind/mujoco_warp/pull/1994) in MuJoCo Warp, [rover arming check](https://github.com/PX4/PX4-Autopilot/pull/29899) in PX4, [use-after-free fix](https://github.com/gazebosim/gz-sim/pull/4238) in Gazebo
